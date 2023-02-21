@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/cofinder/static/css/main.98d5ffec.css",
-    "main.js": "/cofinder/static/js/main.f961292d.js",
-    "static/js/377.f3cc91ef.chunk.js": "/cofinder/static/js/377.f3cc91ef.chunk.js",
-    "static/media/hero_back.jpg": "/cofinder/static/media/hero_back.b4bdc4db026dfcbc4d7c.jpg",
-    "service-worker.js": "/cofinder/service-worker.js",
-    "index.html": "/cofinder/index.html",
-    "main.98d5ffec.css.map": "/cofinder/static/css/main.98d5ffec.css.map",
-    "main.f961292d.js.map": "/cofinder/static/js/main.f961292d.js.map",
-    "377.f3cc91ef.chunk.js.map": "/cofinder/static/js/377.f3cc91ef.chunk.js.map"
+    "main.css": "/static/css/main.22d17bb3.css",
+    "main.js": "/static/js/main.a33802b1.js",
+    "static/js/377.f3cc91ef.chunk.js": "/static/js/377.f3cc91ef.chunk.js",
+    "static/media/hero_back.jpg": "/static/media/hero_back.b4bdc4db026dfcbc4d7c.jpg",
+    "service-worker.js": "/service-worker.js",
+    "index.html": "/index.html",
+    "main.22d17bb3.css.map": "/static/css/main.22d17bb3.css.map",
+    "main.a33802b1.js.map": "/static/js/main.a33802b1.js.map",
+    "377.f3cc91ef.chunk.js.map": "/static/js/377.f3cc91ef.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d5ffec.css",
-    "static/js/main.f961292d.js"
+    "static/css/main.22d17bb3.css",
+    "static/js/main.a33802b1.js"
   ]
 }

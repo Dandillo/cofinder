@@ -22,7 +22,7 @@ import {
 import { Link } from "react-router-dom";
 const pages = ["Главная", "Предложения", "Проекты", "Что-то еще"];
 const pagesLink = {
-  Главная: "/Home",
+  Главная: "/cofinder/clientApp",
   Предложения: "/cvs",
   Проекты: "/projects",
 };
@@ -81,7 +81,7 @@ function Header(props) {
               variant="h4"
               noWrap
               component={Link}
-              to="Home"
+              to="/cofinder/clientApp"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },

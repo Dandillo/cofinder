@@ -19,6 +19,7 @@ export class Home extends Component {
           justifyContent: "center",
           height: "100vh",
         }}
+        className="section-container"
       >
         <h1 style={{ color: "white", textAlign: "center" }}>
           Соберем команду единомышленников

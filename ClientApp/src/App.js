@@ -13,9 +13,9 @@ export default class App extends Component {
   render() {
     return (
       <Layout>
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/cofinder/clientApp" component={Home} />
         <Route exact path="/projects" component={projects} />
-        <Redirect from="/" to="/home" />
+        <Redirect from="/" to="/cofinder/clientApp" />
       </Layout>
     );
   }

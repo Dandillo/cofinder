@@ -81,7 +81,7 @@ function Header(props) {
               variant="h4"
               noWrap
               component={Link}
-              to="/cofinder/clientApp"
+              to="/clientApp"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },

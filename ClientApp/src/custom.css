@@ -1,0 +1,49 @@
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+code {
+  color: #E01A76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer {
+  color: aliceblue;
+  background-color: #041322;
+  text-align: center;
+  margin-top: auto;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-heading {
+  padding-top: 10px;
+}
+
+
+.section-container {
+max-width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)), url('./assets/img/hero_back.jpg') no-repeat center center;
+  background-size: cover;
+    background-position: 'center';
+      background-size:   'cover';
+      background-repeat: 'no-repeat';
+      width: 100vw;
+      height: 100vh;
+}

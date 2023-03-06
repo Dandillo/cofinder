@@ -6,6 +6,7 @@ import { Home } from "./components/Home";
 import "./custom.css";
 import Projects from "./components/Projects";
 import Cvs from "./components/Cvs";
+import SignUp from "./components/SignUpForm";
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
             <Route index element={<Home />} />
             <Route path="cvs" element={<Cvs />} />
             <Route path="projects" element={<Projects />} />
+            <Route path="sign-up" element={<SignUp />} />
           </Route>
+        
         </Routes>
  
     </>

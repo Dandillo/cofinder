@@ -159,10 +159,13 @@ function Header(props) {
                 </Link>
               ))}
             </Box>
-
+            <Link
+                style={{ textDecoration: "none" }}
+                to={`sign-up`}
+            >
             <Button variant="contained" color="secondary" sx={{ mr: 2 }}>
               Регистрация
-            </Button>
+                      </Button></Link>
             <Button variant="outlined" color="inherit">
               Войти
             </Button>

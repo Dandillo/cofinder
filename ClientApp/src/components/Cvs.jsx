@@ -2,9 +2,7 @@ import { Grid } from "@mui/material";
 import React from "react";
 import BasicCard from "./BasicCard";
 const Cvs = () => {
-  document.body
-    .querySelector(".container")
-    .classList.remove("section-container");
+
   return (
     <div>
           <Grid container spacing={ 1}>

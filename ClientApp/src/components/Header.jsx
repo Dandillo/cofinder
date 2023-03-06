@@ -4,11 +4,9 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
 import FollowTheSignsRoundedIcon from "@mui/icons-material/FollowTheSignsRounded";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import {
@@ -73,14 +71,11 @@ function Header(props) {
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <FollowTheSignsRoundedIcon
-              sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-            />
             <Typography
               variant="h4"
               noWrap
               component={Link}
-              to="/clientApp"
+              to="/"
               sx={{
                 mr: 2,
                 display: { xs: "none", md: "flex" },
@@ -89,8 +84,12 @@ function Header(props) {
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
+                alignItems: 'baseline',
               }}
             >
+              <FollowTheSignsRoundedIcon
+                sx={{ display: { xs: "none", md: "flex" }, mr: 1, height: "100%" }}
+              />
               COFINDER
             </Typography>
 
@@ -147,11 +146,11 @@ function Header(props) {
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Link
+                  key={page}
                   style={{ textDecoration: "none" }}
                   to={`${pagesLink[page]}`}
                 >
                   <Button
-                    key={page}
                     //   onClick={hand}
                     sx={{ my: 2, color: "white", display: "block" }}
                   >

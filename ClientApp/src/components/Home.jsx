@@ -4,12 +4,16 @@ import Container from "@mui/material/Container";
 import React, { Component } from "react";
 
 export class Home extends Component {
-  static displayName = Home.name;
-
-  render() {
+  componentDidMount() {
     document.body
-      .querySelector(".container")
       .classList.add("section-container");
+  }
+  componentWillUnmount() {
+    document.body
+      .classList.remove("section-container");
+  }
+  static displayName = Home.name;
+  render() {
     return (
       <div
         style={{
@@ -19,7 +23,6 @@ export class Home extends Component {
           justifyContent: "center",
           height: "100vh",
         }}
-        className="section-container"
       >
         <h1 style={{ color: "white", textAlign: "center" }}>
           Соберем команду единомышленников

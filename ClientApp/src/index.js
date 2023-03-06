@@ -1,24 +1,17 @@
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import {Layout} from "./components/Layout";
-import {Home} from "./components/Home";
-import {Cvs} from "./components/Cvs";
+import React from "react";
+import { StrictMode } from "react";
+import * as ReactDOMClient from "react-dom/client";
+import "./custom.css";
+import App from "./App";
+import { BrowserRouter } from "react-router-dom";
 
+const rootElement = document.getElementById("root");
+const root = ReactDOMClient.createRoot(rootElement);
 
-export default function App() {
-  return (
+root.render(
+  <StrictMode>
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
+      <App />
     </BrowserRouter>
-  );
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+  </StrictMode>
+);

@@ -20,9 +20,8 @@ import {
   Drawer,
 } from "@mui/material";
 import { Link } from "react-router-dom";
-const pages = ["Главная", "Предложения", "Проекты", "Что-то еще"];
+const pages = ["Предложения", "Проекты", "Новости"];
 const pagesLink = {
-  Главная: "/cofinder/clientApp",
   Предложения: "/cvs",
   Проекты: "/projects",
 };

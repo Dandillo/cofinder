@@ -37,7 +37,7 @@ export default function BasicCard(props) {
           <Grid item xs={8}>
             <Box>
               <Typography variant="h2" component="div">
-                Название проекта
+                {props.title}
               </Typography>
               <Typography variant="h5" component="div">
                 {bull}IT{bull}Маркетинг{bull}Общество

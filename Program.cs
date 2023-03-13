@@ -1,5 +1,8 @@
+using System.Configuration;
 using cofinder;
 using cofinder.Models;
+using Microsoft.EntityFrameworkCore;
+
 // public class Program
 // {
 //     public static void Main(string[] args)
@@ -38,6 +41,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller}/{action=Index}/{id?}");
 
-app.MapFallbackToFile("index.html"); ;
+app.MapFallbackToFile("index.html");
 
 app.Run();

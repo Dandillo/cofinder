@@ -37,7 +37,7 @@ public partial class CoFinderContext : DbContext
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
-            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            var connectionString = configuration.GetConnectionString("test");
             optionsBuilder.UseNpgsql(connectionString);
         }
     }

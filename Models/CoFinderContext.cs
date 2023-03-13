@@ -33,12 +33,12 @@ public partial class CoFinderContext : DbContext
     {
         if (!optionsBuilder.IsConfigured)
         {
-            // IConfigurationRoot configuration = new ConfigurationBuilder()
-            //     .SetBasePath(Directory.GetCurrentDirectory())
-            //     .AddJsonFile("appsettings.json")
-            //     .Build();
-            // var connectionString = configuration.GetConnectionString("DefaultConnection");
-            // optionsBuilder.UseNpgsql(connectionString);
+            IConfigurationRoot configuration = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json")
+                .Build();
+            var connectionString = configuration.GetConnectionString("DefaultConnection");
+            optionsBuilder.UseNpgsql(connectionString);
         }
     }
 

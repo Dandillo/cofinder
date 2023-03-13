@@ -9,7 +9,7 @@ using cofinder.Models;
 
 namespace cofinder.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     public class UsersController : ControllerBase
     {
